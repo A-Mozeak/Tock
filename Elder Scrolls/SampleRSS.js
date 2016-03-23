@@ -3,7 +3,7 @@ function myGetElementsByClassName(selector) {
         return document.getElementsByClassName(selector);
     }
 
-    var returnList = new Array();
+    var returnList = [];
     var nodes = document.getElementsByTagName('div');
     var max = nodes.length;
     for ( var i = 0; i < max; i++ ) {
@@ -86,7 +86,7 @@ var rssReader = {
 
 window.onload = function() {
     rssReader.init('post_results');
-}
+};
 
 
 $(document).ready(function(){
@@ -152,21 +152,6 @@ function widthIncrease(selector){
 	
 
 	
-function addLength(thing){
-	var containers = myGetElementsByClassName(thing);
-   
-   //for now arbitrarily adds an extra feed item
-	for(i=0;i<containers.length;i++){
-		var num = Number(containers[i].getAttribute('rss_num'));
-		num += 1;
-		containers[i].setAttribute('rss_num', num);
-		window.alert('There are now ' + num + ' items in the feed.');
-	}
-	
-	document.getElementsByTagName('tr')[0,1].style.webkitAnimationName = "none";
-	chRule("marquee");
-}
-
 //FROM CURIOUS.COM MARQUEE.
 /*
 It looks like the before and after pseudos effectively make 
