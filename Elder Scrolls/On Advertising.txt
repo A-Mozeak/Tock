@@ -1,0 +1,3 @@
+Rather than include AdSense in the package (which is against Google's rules)
+Find a way to serve ads as if they're a default RSS subscription.
+That may mean hosting a server where ads are processed and sent to the app.

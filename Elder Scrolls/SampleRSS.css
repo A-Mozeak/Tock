@@ -1,0 +1,51 @@
+td {
+	padding: 0px 10px 0px 10px;
+	font-family: "Arial";
+	display: inline;
+	position: relative;
+	-webkit-animation: marquee 35s linear infinite;
+	-webkit-animation-fill-mode: forwards;
+	}
+
+a {
+	text-decoration: none;
+
+	}
+
+tr {
+	margin: 0 auto;
+	overflow: hidden;
+	white-space: nowrap;
+	box-sizing: content-box;
+	position: relative;
+	}
+
+#rectContainer{
+	padding: 5px;
+	margin: auto;
+	position: absolute;
+	}
+	
+#Tangle {
+	background-color: lightblue;
+	width: 150px;
+	height: 20px;
+	margin: 0px 20px auto;
+	float: left;
+	position: relative;
+	}
+	
+tr:hover {
+	-webkit-animation-play-state: paused;
+	}
+
+@-webkit-keyframes marquee {
+	0% { -webkit-transform: translateX(100vw) }
+	100% { -webkit-transform: translateX(-250vw) }
+	}
+	
+
+	
+/*It looks like each element is running into the next because they are all separate objects and each one subtracts 
+a certain amount of space from the total width, causing the others behind it to move faster.*/
+/*TRANSLATEX FIXED THIS!!!*/

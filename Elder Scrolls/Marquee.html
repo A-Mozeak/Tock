@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Scrolling Thing</title>
+	
+	<!-- CSS linked that gives it the ticker look (consider fonts, borders, colors.) -->
+	<link rel="stylesheet" type="text/css" href="SampleRSS.css">
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="SampleRSS.js"></script>
+
+</head>
+
+<body>
+	<!--<marquee scrollamount="10" onmouseover="slowToStop()">-->
+		<div class="post_results" id="feedScroll_1" rss_num="8" rss_url="http://rss.news.yahoo.com/rss/topstories"></div>
+	<!--</marquee>-->
+	
+	<!--<marquee scrollamount="7" onmouseover="slowToStop()">-->
+		<div class="post_results" id="feedScroll_2" rss_num="8" rss_url="http://newsrss.bbc.co.uk/rss/newsonline_world_edition/front_page/rss.xml"></div>	
+	<!--</marquee>-->
+		<br/>
+		<br/>
+		<div id="rectContainer">
+			<div id="Tangle">
+			</div>
+			<div id="Tangle">
+			</div>
+			<div id="Tangle">
+			</div>
+			<div id="Tangle">
+			</div>
+		</div>
+		<br/>
+		<br/>
+		<button id="myButton">Click Me</button>
+		<button id="addItem" onclick="addLength('post_results')">Add a feed item</button>
+</body>
+</html>

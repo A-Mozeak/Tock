@@ -1,0 +1,26 @@
+/*----TODO----
+
+--UI Styling--
+Remove underlines from links
+
+Set fonts and colors.
+
+--Structural Styling--
+Set Animation.
+
+Build flex container.
+.container {
+  display: flex;
+}
+
+.flexScroll {
+  flex-direction: row rtl;
+}
+
+.bite {
+  flex: 0 1 auto;
+}
+
+Enable flex on flexScrolls.
+
+Set max-widths and ellipses ::after(?).
