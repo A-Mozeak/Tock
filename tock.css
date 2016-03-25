@@ -2,27 +2,50 @@
 
 --UI Styling--
 Remove underlines from links
+*/
 
+a {
+  text-decoration: none
+}
+
+/*
 Set fonts and colors.
 
 --Structural Styling--
 Set Animation.
 
-Build flex container.*/
-.container {
-  display: flex;
+Build flex container.
+#container {
+}
+*/
+
+.bottom, .top {
+  white-space: nowrap;
+  width: 200vw;
+  
 }
 
-
-.bottom, .top, .flexScroll {
-  display: inline-block;
-  flex-direction: rtl;
+.flexScroll{
+  display:inline;
+  overflow: hidden;
 }
 
 .bite {
-  display: inline-block;
-  flex: 0 1 auto;
+  display: inline;
+  max-width: 500px;
+  margin: 10px;
 }
+
+
+/*
+#topFront.bite, #bottomFront.bite{
+  background-color: lightblue;
+}
+
+#topBack.bite, #bottomBack.bite {
+  background-color: red;
+}
+*/
 
 /*
 Enable flex on flexScrolls.
