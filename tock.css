@@ -13,17 +13,34 @@ Set fonts and colors.
 
 --Structural Styling--
 Set Animation.
-
-Build flex container.
-#container {
-}
 */
+@keyframes frontScrolls {
+  0% { transform: translateX('0vw'); }
+  100% { transform: translateX('-100vw'); }
+}
+
+@keyframes backScrolls {
+  0% { transform: translateX('100vw'); }
+  100% { transform: translateX('0vw'); }
+}
+
+#topFront, #bottomFront {
+  animation: frontScrolls 10s linear infinite;
+}
+
+#topBack, #bottomBack {
+  animation: backScrolls 15s linear infinite;
+}
+
+/*Build flex container.*/
 
 .bottom, .top {
+  position: static;
   white-space: nowrap;
   width: 200vw;
-  
+  margin: 10px 0px;
 }
+
 
 .flexScroll{
   display:inline;
@@ -33,9 +50,9 @@ Build flex container.
 .bite {
   display: inline;
   max-width: 500px;
-  margin: 10px;
+  margin: auto;
+  border: 5px solid red;
 }
-
 
 /*
 #topFront.bite, #bottomFront.bite{
