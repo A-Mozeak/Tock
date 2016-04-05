@@ -14,45 +14,60 @@ Set fonts and colors.
 --Structural Styling--
 Set Animation.
 */
-@keyframes frontScrolls {
-  0% { transform: translateX('0vw'); }
-  100% { transform: translateX('-100vw'); }
+
+@-webkit-keyframes spin{
+  0%{ -webkit-transform: rotate(0deg); }
+  100%{ -webkit-transform: rotate(360deg); }
 }
 
-@keyframes backScrolls {
-  0% { transform: translateX('100vw'); }
-  100% { transform: translateX('0vw'); }
+@-webkit-keyframes frontScroll{
+  0%{ left: 0vw; }
+  100%{ left: -100vw; }
 }
 
-#topFront, #bottomFront {
-  animation: frontScrolls 10s linear infinite;
+@-webkit-keyframes backScroll{
+  0%{ left: 100vw; }
+  100%{ left: 0vw; }
 }
 
-#topBack, #bottomBack {
-  animation: backScrolls 15s linear infinite;
+#topFront {
+  position: absolute;
+  -webkit-animation: frontScroll 15s linear infinite;
 }
 
+#topBack {
+  position: absolute;
+  -webkit-animation: backScroll 15s linear infinite;
+}
+
+#bottomFront {
+  position: absolute;
+  -webkit-animation: frontScroll 20s linear infinite;
+}
+
+#bottomBack {
+  position: absolute;
+  -webkit-animation: backScroll 20s linear infinite;
+}
 /*Build flex container.*/
 
 .bottom, .top {
-  position: static;
+  position: relative;
   white-space: nowrap;
-  width: 200vw;
   margin: 10px 0px;
 }
 
-
 .flexScroll{
   display:inline;
-  overflow: hidden;
 }
 
 .bite {
   display: inline;
   max-width: 500px;
   margin: auto;
-  border: 5px solid red;
+  border: none;
 }
+
 
 /*
 #topFront.bite, #bottomFront.bite{
