@@ -15,23 +15,12 @@ Set fonts and colors.
 Set Animation.
 */
 
-/*@-webkit-keyframes frontScroll{
-  0%{ left: 0vw; }
-  100%{ left: -100vw; }
-}
-
-@-webkit-keyframes backScroll{
-  0%{ left: 100vw; }
-  100%{ left: 0vw; }
-}*/
-
 @-webkit-keyframes scroller {
   0%{ left: 0vw; }
   100%{ left: -100vw; }
 }
 
 .top {
-  position: absolute;
   -webkit-animation: scroller 15s linear infinite;
 }
 
@@ -50,7 +39,6 @@ Set Animation.
 }
 
 .bottom {
-  position: absolute;
   -webkit-animation: scroller 25s linear infinite;
 }
 
