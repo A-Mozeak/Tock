@@ -72,8 +72,9 @@ Set Animation.
 .bite {
   display: inline;
   max-width: 500px;
-  margin: auto;
-  border: none;
+  margin: 0 auto;
+  font-family: Helvetica;
+  font-size: 12px;
 }
 
 
