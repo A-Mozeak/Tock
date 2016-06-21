@@ -1,3 +1,4 @@
+//So here I've made two JSON objects that contain smaller JSON bites of news data.
 var bite = { data: [
 	{title: 'News Article1',
 	 author: 'Arthur M. Journalist',
@@ -28,14 +29,17 @@ var bite1 = { data: [
 ]
 };
 
+//Get the bite nodes to paste news data.
 var posts = document.getElementsByClassName('bite');
 
+//Initialize bites to the first JSON object's data.
 for( var i = 0 ; i < posts.length ; i++){
 	posts[i].innerHTML = bite.data[i%3].title;
 };
 
-var load  = setInterval(function(){loader1()}, 5000);
-var load2 = setInterval(function(){loader2()}, 5001);
+//Function to alternate displayed data at interval.
+var load  = setInterval(function(){ loader1() }, 5000);
+var load2 = setInterval(function(){ loader2() }, 10000);
 
 function loader1(){
 	if(posts[0].innerHTML === bite.data[0].title){
