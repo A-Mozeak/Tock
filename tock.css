@@ -15,15 +15,20 @@ Set fonts and colors.
 Set Animation.
 */
 
+html{
+  /*background-color: rgba(#edf4f6, 0.95);*/
+  background-color: black; /*alternate*/
+}
+
 @-webkit-keyframes scroller {
   0%{ left: 0vw; }
   100%{ left: -100vw; }
 }
 
-.top {
+/*.top {
   -webkit-animation: scroller 15s linear infinite;
 }
-
+*/
 .top:hover {
   -webkit-animation-play-state: paused;
 }
@@ -38,10 +43,10 @@ Set Animation.
   left: 100vw;
 }
 
-.bottom {
+/*.bottom {
   -webkit-animation: scroller 25s linear infinite;
 }
-
+*/
 .bottom:hover {
   -webkit-animation-play-state: paused;
 }
@@ -66,7 +71,7 @@ Set Animation.
 }
 
 .flexScroll{
-  display:inline;
+  display:none;
 }
 
 .bite {
@@ -74,10 +79,16 @@ Set Animation.
   max-width: 500px;
   margin: 0 auto;
   font-family: Helvetica;
+  /*color: black;*/
+  color: white;/*alternate*/
   font-size: 12px;
 }
 
-
+/*--MENU STYLES--*/
+.searchMenu {
+  display: inline;
+  color: white;
+}
 
 /*
 #topFront.bite, #bottomFront.bite{

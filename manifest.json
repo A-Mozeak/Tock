@@ -1,0 +1,19 @@
+{
+  "name": "*Tock*",
+  "description": "Stay on top of your most important feeds!",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": {
+    "16": "newtons-cradle16.png",
+    "48": "newtons-cradle48.png",
+    "128": "newtons-cradle128.png"
+  },
+  "permissions": [
+    "alwaysOnTopWindows"
+  ]
+}

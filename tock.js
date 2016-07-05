@@ -40,14 +40,22 @@ var bite1 = { data: [
 
 //DELICIOUS BITE PROTOTYPES HERE 😁
 
-var data; //= the Feedly response 📥
+/*var data = '/sampleJSON.json'; //= the Feedly response 📥
 
-var Bite = Object.create(null);
-	Bite.title = data.title;
-	Bite.author = data.author;
-	Bite.date = data.published;
-	Bite.summary = data.summary.content;
+var Bite = {
+	create: (title, author, date, summary) => {
+		var instance = Object.create(Bite);
+		instance.title = title;
+		instance.author = author;
+		instance.date = date;
+		instance.summary = summary;
+		return instance
+	},
+	sayTitle: () => console.log(title),
+	sayAuthor: () => console.log(author)
+}*/
 
+//var item = Bite.create(data.title, data.author, data.published, data.summary.content);
 
 
 //Get the bite nodes to paste news data. 📠
@@ -78,6 +86,11 @@ function loader2(){
 	}
 }
 
+/*//---SUBSCRIPTION GETTER---
+var feedSearch = function(query){
+
+}
+*/
 // SANDBOX TOKEN ENDS 08/01 curl 'http://cloud.feedly.com/v3/mixes/contents?streamId=feed%2Fhttp%3A%2F%2Fwww.engadget.com%2Frss.xml&count=3' -H 'Authorization: OAuth 1QA6I3662OW2KEG48WA6' | python -m json.tool
 
 
