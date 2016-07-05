@@ -7,6 +7,9 @@ if (typeof Object.create !== 'function') {
 	};
 }
 
+var screenHeight = window.screen.availHeight;
+window.moveTo(0, screenHeight - 70);
+
 //So here I've made two JSON objects that contain smaller JSON bites of news data.
 var bite = { data: [
 	{title: 'News Article1',

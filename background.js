@@ -1,9 +1,9 @@
 chrome.app.runtime.onLaunched.addListener(function() {
+  var screenWidth = window.screen.availWidth;
   chrome.app.window.create('index.html', {
     'outerBounds': {
-      'width': 1290,
+      'width': screenWidth,
       'height': 70,
-      'top': 730
     },
     'frame': 'none',
     'alwaysOnTop': true,
