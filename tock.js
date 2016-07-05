@@ -79,7 +79,7 @@ function loader1(){
 			posts[i].innerHTML = bite1.data[i%3].title;
 		};
 	}
-}
+};
 
 function loader2(){
 	if(posts[0].innerHTML === bite1.data[0].title){
@@ -87,8 +87,26 @@ function loader2(){
 			posts[i].innerHTML = bite.data[i%3].title;
 		};
 	}
-}
+};
 
+
+var getResults = function(){
+	var terms = document.getElementById('search').value;
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+    if (xhr.readyState == XMLHttpRequest.DONE) {
+			for (var i; i < xhr.responseText.results.length; i++)
+        var p = document.createElement('P');
+				var title = document.createTextNode(xhr.responseText.results[i].title);
+				p.appendChild(title);
+				document.getElementById('searchResults').appendChild(p);
+    }
+	};
+	xhr.open('GET', 'https://cloud.feedly.com/v3/search/feeds?query=' + terms, true);
+	xhr.send(null);
+};
+
+document.getElementById('searchBtn').addEventListener('click', getResults);
 /*//---SUBSCRIPTION GETTER---
 var feedSearch = function(query){
 
