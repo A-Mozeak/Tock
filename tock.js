@@ -113,6 +113,12 @@ var getResults = function(){
 };
 
 document.getElementById('searchBtn').addEventListener('click', getResults);
+
+var querify = function(url){
+	var querified = url.replace(':', '%3A').replace(/\//g, '%2F');
+    return querified;
+};
+
 /*//---SUBSCRIPTION GETTER---
 var feedSearch = function(query){
 
