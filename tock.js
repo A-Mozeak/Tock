@@ -91,19 +91,25 @@ function loader2(){
 
 
 var getResults = function(){
-	var terms = document.getElementById('search').value;
-	var xhr = new XMLHttpRequest();
-	xhr.onreadystatechange = function() {
-    if (xhr.readyState == XMLHttpRequest.DONE) {
-			for (var i; i < xhr.responseText.results.length; i++)
-        var p = document.createElement('P');
-				var title = document.createTextNode(xhr.responseText.results[i].title);
-				p.appendChild(title);
-				document.getElementById('searchResults').appendChild(p);
-    }
+  var terms = document.getElementById('search').value;
+  var xhr = new XMLHttpRequest;
+  xhr.onload = function(){
+    if(xhr.status === 200){
+      responseObject = JSON.parse(xhr.responseText);
+			var titles = [];
+      for(var i = 0; i < responseObject.results.length; i++){
+      	titles.push(responseObject.results[i].title);
+		 	};
+			for(var j = 0; j < titles.length; j++){
+			 var para = document.createElement('P');
+			 para.className = 'result';
+			 para.innerText = titles[j];
+			 document.getElementById('searchResults').appendChild(para);
+		 	};
+		};
 	};
-	xhr.open('GET', 'https://cloud.feedly.com/v3/search/feeds?query=' + terms, true);
-	xhr.send(null);
+  xhr.open('GET', 'https://cloud.feedly.com/v3/search/feeds?query=' + terms, true);
+  xhr.send(null);
 };
 
 document.getElementById('searchBtn').addEventListener('click', getResults);

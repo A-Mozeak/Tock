@@ -74,7 +74,7 @@ html{
   display:none;
 }
 
-.bite {
+.bite, .result {
   display: inline;
   max-width: 500px;
   margin: 0 auto;
