@@ -1,4 +1,14 @@
 {
+  "title": "JSON Responses and XHR Requests",
+  "description": "This document contains xhr procedures and sample outputs that will be used in Tock. JSON has been
+    pretty-printed using jsonprettyprint.com",
+  "usage": "Request URL and its description/usage will be presented as key-values within each response and
+    denoted with a 🚩 emoji."
+
+}
+
+
+{
     "alternate": [
         {
             "href": "http://www.engadget.com",
