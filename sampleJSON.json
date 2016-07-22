@@ -4,325 +4,326 @@
     pretty-printed using jsonprettyprint.com",
   "usage": "Request URL and its description/usage will be presented as key-values within each response and
     denoted with a 🚩 emoji."
-
 }
 
 
 {
-    "alternate": [
+  "🚩purpose": "Search for a term.",
+  "🚩urlEncoded": "https%3A%2F%2Fcloud.feedly.com%2Fv3%2Fsearch%2Ffeeds%3Fquery%3Dbloomberg",
+  "hint": "bloomberg",
+  "queryType": "term",
+  "results": [
+    {
+      "deliciousTags": [
+        "business",
+        "finance",
+        "bloomberg",
+        "economics"
+      ],
+      "feedId": "feed\/http:\/\/www.newslookup.com\/rss\/business\/bloomberg.rss",
+      "language": "en",
+      "title": "Bloomberg",
+      "velocity": 1368.5,
+      "subscribers": 28805,
+      "lastUpdated": 1468899600000,
+      "website": "http:\/\/www.bloomberg.com\/",
+      "score": 28774,
+      "coverage": 0.03,
+      "coverageScore": 2.71,
+      "estimatedEngagement": 359,
+      "scheme": "TEXT:BASELINE:ORGANIC_SEARCH",
+      "contentType": "article",
+      "description": "Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News",
+      "coverUrl": "http:\/\/storage.googleapis.com\/site-assets\/oq1n42IyECknOTiNfjNXiOoqagEUqv7DFJF0BkkUIkQ_cover-154125c1de7",
+      "iconUrl": "http:\/\/storage.googleapis.com\/site-assets\/oq1n42IyECknOTiNfjNXiOoqagEUqv7DFJF0BkkUIkQ_icon-154125c1de7",
+      "partial": true,
+      "twitterScreenName": "business",
+      "visualUrl": "http:\/\/storage.googleapis.com\/site-assets\/oq1n42IyECknOTiNfjNXiOoqagEUqv7DFJF0BkkUIkQ_visual-154125c1de7",
+      "coverColor": "101112",
+      "twitterFollowers": 3115305,
+      "facebookUsername": "bloomberglp",
+      "facebookLikes": 56815,
+      "art": 95.96
+    },
+    {
+      "deliciousTags": [
+        "finance",
+        "business",
+        "economics",
+        "politics"
+      ],
+      "feedId": "feed\/http:\/\/www.bloomberg.com\/feed\/bview\/",
+      "language": "en",
+      "title": "Bloomberg View",
+      "velocity": 155.2,
+      "subscribers": 12511,
+      "lastUpdated": 1468889460000,
+      "website": "http:\/\/bloomberg.com\/view\/",
+      "score": 66524.6,
+      "coverage": 0.09,
+      "coverageScore": 9.32,
+      "estimatedEngagement": 461,
+      "hint": "bloomberg",
+      "scheme": "TEXT:BASELINE:ORGANIC_SEARCH",
+      "contentType": "article",
+      "description": "Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News",
+      "coverUrl": "http:\/\/storage.googleapis.com\/site-assets\/AhcTOseVRt61AcX63VIHJCOqvjcB_S76KFY4oFXNNZY_cover-15415a28154",
+      "iconUrl": "http:\/\/storage.googleapis.com\/site-assets\/AhcTOseVRt61AcX63VIHJCOqvjcB_S76KFY4oFXNNZY_icon-15415a28154",
+      "partial": true,
+      "twitterScreenName": "business",
+      "visualUrl": "http:\/\/storage.googleapis.com\/site-assets\/AhcTOseVRt61AcX63VIHJCOqvjcB_S76KFY4oFXNNZY_visual-15415a28154",
+      "coverColor": "101112",
+      "twitterFollowers": 3114453,
+      "facebookUsername": "Bloomberglp",
+      "facebookLikes": 56797,
+      "art": 100.81
+    },
+    {
+      "deliciousTags": [
+        "energy",
+        "renewable energy",
+        "bloomberg",
+        "business"
+      ],
+      "feedId": "feed\/http:\/\/www.bnef.com\/bnef\/feed\/",
+      "language": "en",
+      "title": "Bloomberg New Energy Finance",
+      "velocity": 2.3,
+      "subscribers": 1354,
+      "lastUpdated": 1468501260000,
+      "website": "http:\/\/about.bnef.com",
+      "score": 1352,
+      "coverage": 0,
+      "coverageScore": 0,
+      "estimatedEngagement": 16,
+      "scheme": "TEXT:BASELINE:ORGANIC_SEARCH",
+      "contentType": "article",
+      "description": "Bloomberg New Energy Finance provides unique analysis, tools and data for decision makers driving change in the energy system.",
+      "coverUrl": "http:\/\/storage.googleapis.com\/site-assets\/6eYsD4GbxoSbQCm7cjhjo4X6rdHm51Tt5t9BpvLxkBQ_cover-1541455766a",
+      "iconUrl": "http:\/\/storage.googleapis.com\/site-assets\/6eYsD4GbxoSbQCm7cjhjo4X6rdHm51Tt5t9BpvLxkBQ_icon-1541455766a",
+      "partial": false,
+      "twitterScreenName": "BloombergNEF",
+      "visualUrl": "http:\/\/storage.googleapis.com\/site-assets\/6eYsD4GbxoSbQCm7cjhjo4X6rdHm51Tt5t9BpvLxkBQ_visual-1541455766a",
+      "coverColor": "00BAE4",
+      "twitterFollowers": 26397,
+      "facebookUsername": "BloombergNEF",
+      "facebookLikes": 5194,
+      "art": 0
+    },
+    {
+      "deliciousTags": [
+        "business",
+        "bloomberg",
+        "finance",
+        "podcasts"
+      ],
+      "feedId": "feed\/http:\/\/www.bloomberg.com\/tvradio\/podcast\/firstword.xml",
+      "language": "en",
+      "title": "The First Word",
+      "velocity": 21,
+      "subscribers": 870,
+      "lastUpdated": 1468878060000,
+      "website": "http:\/\/bloomberg.com\/podcasts\/first_word",
+      "score": 6145.59,
+      "coverage": 0,
+      "coverageScore": 0,
+      "estimatedEngagement": 2,
+      "hint": "bloomberg",
+      "scheme": "TEXT:BASELINE:ORGANIC_SEARCH",
+      "contentType": "audio",
+      "description": "Hear breaking economic, business and market news as it happens, around the globe. Karen Moskow and Bob Moon host.",
+      "coverUrl": "http:\/\/storage.googleapis.com\/site-assets\/-RTJfxn3-39nIWnbTRXwKiznTY-kZ4RW8K9r60R_yKs_cover-15421d0ccd7",
+      "iconUrl": "http:\/\/storage.googleapis.com\/site-assets\/-RTJfxn3-39nIWnbTRXwKiznTY-kZ4RW8K9r60R_yKs_icon-15421d0ccd7",
+      "partial": false,
+      "twitterScreenName": "business",
+      "visualUrl": "http:\/\/storage.googleapis.com\/site-assets\/-RTJfxn3-39nIWnbTRXwKiznTY-kZ4RW8K9r60R_yKs_visual-15421d0ccd7",
+      "coverColor": "101112",
+      "twitterFollowers": 3104719,
+      "facebookUsername": "Bloomberglp",
+      "facebookLikes": 56106,
+      "art": 0
+    },
+    {
+      "deliciousTags": [
+        "business",
+        "bloomberg",
+        "finance",
+        "podcasts"
+      ],
+      "feedId": "feed\/http:\/\/www.bloomberg.com\/tvradio\/podcast\/surveillance.xml",
+      "language": "en",
+      "title": "Bloomberg Surveillance",
+      "velocity": 10.5,
+      "subscribers": 988,
+      "lastUpdated": 1468858260000,
+      "website": "http:\/\/bloomberg.com\/podcasts\/surveillance",
+      "score": 987,
+      "coverage": 0,
+      "coverageScore": 0,
+      "estimatedEngagement": 1,
+      "scheme": "TEXT:BASELINE:ORGANIC_SEARCH",
+      "contentType": "audio",
+      "description": "Bloomberg's Tom Keene and Michael McKee speak to experts on economics, finance, investment and international relations.",
+      "coverUrl": "http:\/\/storage.googleapis.com\/site-assets\/6Vyt7GV6HlP212JMiKbZOB1pRYbbnlm6Z-Z2FsiY1lg_cover-15421d0c5b8",
+      "iconUrl": "http:\/\/storage.googleapis.com\/site-assets\/6Vyt7GV6HlP212JMiKbZOB1pRYbbnlm6Z-Z2FsiY1lg_icon-15421d0c5b8",
+      "partial": false,
+      "twitterScreenName": "business",
+      "visualUrl": "http:\/\/storage.googleapis.com\/site-assets\/6Vyt7GV6HlP212JMiKbZOB1pRYbbnlm6Z-Z2FsiY1lg_visual-15421d0c5b8",
+      "coverColor": "101112",
+      "twitterFollowers": 3104719,
+      "facebookUsername": "Bloomberglp",
+      "facebookLikes": 56106,
+      "art": 0
+    }
+  ],
+  "related": [
+    "business",
+    "finance"
+  ],
+  "scheme": "subs.0"
+}
+
+
+{
+  "🚩purpose": "Get the content of a feed.",
+  "🚩urlEncoded": "https%3A%2F%2Fcloud.feedly.com%2Fv3%2Fstreams%2Fcontents%3FstreamId%3Dfeed%252Fhttp%253A%252F%252Fwww.newslookup.com%252Frss%252Fbusiness%252Fbloomberg.rss%26count%3D4",
+  "id": "feed\/http:\/\/www.newslookup.com\/rss\/business\/bloomberg.rss",
+  "direction": "ltr",
+  "updated": 1469069428549,
+  "title": "Bloomberg",
+  "alternate": [
+    {
+      "href": "http:\/\/www.bloomberg.com\/",
+      "type": "text\/html"
+    }
+  ],
+  "continuation": "1560b41eae6:96de2d8:d45364f0",
+  "items": [
+    {
+      "id": "oq1n42IyECknOTiNfjNXiOoqagEUqv7DFJF0BkkUIkQ=_1560b5c8745:9736602:d45364f0",
+      "originId": "http:\/\/www.bloomberg.com\/news\/articles\/2016-07-21\/hong-kong-stocks-erase-2016-loss-as-gauge-heads-for-bull-market",
+      "fingerprint": "8e86006c",
+      "origin": {
+        "streamId": "feed\/http:\/\/www.newslookup.com\/rss\/business\/bloomberg.rss",
+        "title": "Bloomberg",
+        "htmlUrl": "http:\/\/www.bloomberg.com\/"
+      },
+      "title": "Hong Kong Stocks Erase 2016 Loss as Gauge Heads for Bull Market",
+      "published": 1469067844000,
+      "crawled": 1469069428549,
+      "alternate": [
         {
-            "href": "http://www.engadget.com",
-            "type": "text/html"
-        }
-    ],
-    "direction": "ltr",
-    "id": "feed/http://www.engadget.com/rss.xml",
-    "items": [
-        {
-            "alternate": [
-                {
-                    "href": "https://www.engadget.com/2016/06/27/dell-70-inch-touchscreen/",
-                    "type": "text/html"
-                }
-            ],
-            "canonicalUrl": "https://www.engadget.com/2016/06/27/dell-70-inch-touchscreen/",
-            "crawled": 1467068058051,
-            "engagement": 359,
-            "engagementRate": 2.58,
-            "fingerprint": "c943d1fd",
-            "id": "vSbjObuspiUUUlHx496XW/WaRBw2NaRdTW1NAiwoLAs=_155941209c3:542e9e0:36858854",
-            "keywords": [
-                "boardroom",
-                "c7017t",
-                "classroom",
-                "dell",
-                "display",
-                "education",
-                "gear",
-                "personal computing",
-                "personalcomputing",
-                "touchscreen"
-            ],
-            "origin": {
-                "htmlUrl": "http://www.engadget.com",
-                "streamId": "feed/http://www.engadget.com/rss.xml",
-                "title": "Engadget"
-            },
-            "originId": "https://www.engadget.com/2016/06/27/dell-70-inch-touchscreen/",
-            "published": 1467067800000,
-            "summary": {
-                "content": "<img src=\"http://o.aolcdn.com/hss/storage/midas/e45e42e6ce3f4b726e2c1979d2c59575/204007248/dell-c7017t.jpg\"><p>Forget chalkboards and whiteboards in the classroom -- Dell thinks tech is the answer. It's launching a 70-inch touchscreen, <a href=\"http://accessories.dell.com/sna/productdetail.aspx?c=us&l=en&s=bsd&cs=04&sku=210-AJJI\">the C7017T</a>, that's designed to replace interactive whiteboards in schools and boardrooms. You probably wouldn't want this at home given the 1080p resolution, but it can handle 10-finger touch and includes two pens for collaborative sessions. More importantly, it's downright frugal compared to Microsoft's 84-inch <a href=\"https://www.engadget.com/2016/03/25/microsofts-gigantic-surface-hub-pen-display-is-finally-shipping/\">Surface Hub</a>. Dell's $5,000 price doesn't include a computer, but it's still going to take a much smaller bite out of the school budget.</p>\n<p><strong>Source: </strong><a target=\"_blank\" href=\"http://accessories.dell.com/sna/productdetail.aspx?c=us&l=en&s=bsd&cs=04&sku=210-AJJI\">Dell (1)</a>, <a target=\"_blank\" href=\"http://www.dell.com/learn/us/en/uscorp1/press-releases/2016-06-27-dell-announces-new-interactive-display-technologies\">(2)</a></p>",
-                "direction": "ltr"
-            },
-            "title": "Dell made a 70-inch touchscreen for schools",
-            "unread": true,
-            "visual": {
-                "contentType": "image/jpeg",
-                "height": 837,
-                "processor": "feedly-nikon-v3.1",
-                "url": "http://o.aolcdn.com/hss/storage/midas/e45e42e6ce3f4b726e2c1979d2c59575/204007248/dell-c7017t.jpg",
-                "width": 1400
-            },
-            "webfeeds": {
-                "logo": "http://storage.googleapis.com/test-site-assets/vSbjObuspiUUUlHx496XW_WaRBw2NaRdTW1NAiwoLAs_ologo-14f041fdbc0",
-                "relatedLayout": "card",
-                "relatedTarget": "browser"
-            }
-        },
-        {
-            "alternate": [
-                {
-                    "href": "https://www.engadget.com/2016/06/26/india-4-dollar-smartphone-ships/",
-                    "type": "text/html"
-                }
-            ],
-            "canonicalUrl": "https://www.engadget.com/2016/06/26/india-4-dollar-smartphone-ships/",
-            "crawled": 1466998943171,
-            "engagement": 1362,
-            "engagementRate": 5.36,
-            "fingerprint": "e6fa83f",
-            "id": "vSbjObuspiUUUlHx496XW/WaRBw2NaRdTW1NAiwoLAs=_1558ff36dc3:41f4e54:85ca5f35",
-            "keywords": [
-                "android",
-                "freedom251",
-                "gear",
-                "india",
-                "mobile",
-                "ringingbells",
-                "smartphone"
-            ],
-            "origin": {
-                "htmlUrl": "http://www.engadget.com",
-                "streamId": "feed/http://www.engadget.com/rss.xml",
-                "title": "Engadget"
-            },
-            "originId": "https://www.engadget.com/2016/06/26/india-4-dollar-smartphone-ships/",
-            "published": 1466998680000,
-            "summary": {
-                "content": "<img src=\"http://o.aolcdn.com/dims-shared/dims3/GLOB/crop/3249x2164+0+120/resize/1600x1066!/format/jpg/quality/85/http://o.aolcdn.com/hss/storage/midas/9d5e640ec3790a72b6b4c49ac08855e4/203480818/b0017b066ab44098b9de312eaae63bbe.jpeg\"><p>We wouldn't blame you for thinking that the <a href=\"https://www.engadget.com/2016/02/26/indias-4-smartphone-is-too-good-to-be-true/\">$4 Indian smartphone</a> was just a pipe dream, but it's apparently quite real. Ringing Bells <a href=\"http://indianexpress.com/article/technology/mobile-tabs/ringing-bells-freedom-251-delivery-for-2-lakh-units-start-june-30-company-to-launch-cheapest-hd-led-tv-2872719/\">tells</a> the <em>Indian Express</em> that its ultra low-cost Freedom 251 (named based on its price in rupees) will start shipping on June 30th, with nearly 200,000 units in the early batch. As before, the hardware is no great shakes. You're looking at a 4-inch 960 x 540 screen, a modest 1.3GHz quad-core processor, 1GB of memory, 8GB of expandable storage, an 8-megapixel rear camera and a 3.2-megapixel front cam -- it's even running Android 5.1 instead of 6.0. Price really is the selling point here.</p>\n<p>While it's good that there's a tangible product, there are still doubts swirling around its feasibility. Ringing Bells' CEO admits that his company is taking a loss on every phone right now -- it's hoping to make up for that through sheer volume. As it stands, the firm is still reluctant to offer hands-on time to the media despite a release just days away.</p>\n<p>If this gamble pays off, though, it could change the local phone market. Even the most affordable smartphones on the market right now still represent a huge expense for some Indians, particularly rural dwellers who rarely enjoy middle class incomes. At $4, the Freedom 251 is inexpensive enough that it'd be far more attainable and help close a technological divide. The main mystery is whether or not the phone is any good. A terrible experience (say, through unreliable hardware) might sour people on the whole concept, no matter how tempting the price might be.</p>\n<p><strong>Via: </strong><a target=\"_blank\" href=\"http://thenextweb.com/gadgets/2016/06/26/india-4-smartphone-shipping/\">The Next Web</a></p>\n<p><strong>Source: </strong><a target=\"_blank\" href=\"http://indianexpress.com/article/technology/mobile-tabs/ringing-bells-freedom-251-delivery-for-2-lakh-units-start-june-30-company-to-launch-cheapest-hd-led-tv-2872719/\">The Indian Express</a></p>",
-                "direction": "ltr"
-            },
-            "title": "India's $4 smartphone arrives June 30th",
-            "unread": true,
-            "visual": {
-                "contentType": "image/jpeg",
-                "height": 1066,
-                "processor": "feedly-nikon-v3.1",
-                "url": "http://o.aolcdn.com/dims-shared/dims3/GLOB/crop/3249x2164+0+120/resize/1600x1066!/format/jpg/quality/85/http://o.aolcdn.com/hss/storage/midas/9d5e640ec3790a72b6b4c49ac08855e4/203480818/b0017b066ab44098b9de312eaae63bbe.jpeg",
-                "width": 1600
-            },
-            "webfeeds": {
-                "logo": "http://storage.googleapis.com/test-site-assets/vSbjObuspiUUUlHx496XW_WaRBw2NaRdTW1NAiwoLAs_ologo-14f041fdbc0",
-                "relatedLayout": "card",
-                "relatedTarget": "browser"
-            }
-        },
-        {
-            "alternate": [
-                {
-                    "href": "https://www.engadget.com/2016/06/26/rolls-royce-plans-remote-controlled-cargo-ships/",
-                    "type": "text/html"
-                }
-            ],
-            "canonicalUrl": "https://www.engadget.com/2016/06/26/rolls-royce-plans-remote-controlled-cargo-ships/",
-            "crawled": 1466992807485,
-            "engagement": 1821,
-            "engagementRate": 7.17,
-            "fingerprint": "a3830525",
-            "id": "vSbjObuspiUUUlHx496XW/WaRBw2NaRdTW1NAiwoLAs=_1558f95ce3d:435a1c5:5405e57d",
-            "keywords": [
-                "boat",
-                "cargo",
-                "drone",
-                "gear",
-                "robots",
-                "rolls-royce",
-                "ship",
-                "transportation"
-            ],
-            "origin": {
-                "htmlUrl": "http://www.engadget.com",
-                "streamId": "feed/http://www.engadget.com/rss.xml",
-                "title": "Engadget"
-            },
-            "originId": "https://www.engadget.com/2016/06/26/rolls-royce-plans-remote-controlled-cargo-ships/",
-            "published": 1466992680000,
-            "summary": {
-                "content": "<img src=\"http://o.aolcdn.com/hss/storage/midas/7c8bd5027af555d9e37469cdc5efabbe/204002166/rolls-royce-unmanned-ship.jpg\"><p>Rolls-Royce isn't limiting its robotic transportation plans to <a href=\"https://www.engadget.com/2016/06/16/rolls-royce-driverless-concept-vision-next-100/\">luxury cars</a>. The British transportation firm has <a href=\"http://www.rolls-royce.com/media/press-releases/yr-2016/21-06-2016-rr-publishes-vision-of-the-future-of-remote-and-autonomous-shipping.aspx\">outlined</a> a strategy for deploying remote-controlled and autonomous cargo vessels. It's working on virtual decks where land-based crews could control every aspect of a ship, complete with VR camera views and monitoring drones to spot issues that no human ever could. Accordingly, Rolls is designing boats where humans wouldn't have to come aboard. In theory, one human would steer several boats -- crew shortages would disappear overnight.</p>\n<p>The move to crew-free ships promises more than a few advantages, Rolls says. You wouldn't need a bridge or living quarters, so you'd have much more room for the goods you're hauling. They'd be safer and more efficient, too, since you'd cut out many human errors (not to mention the direct risks from rough weather and pirates) and streamline operations. Robotic ships might cut the number of available jobs, but they would let distant crews handle more complex tasks without being overwhelmed.</p>\n<p>Some of Rolls' concepts are more <em>Star Trek</em> than real life at the moment (its imagery includes interactive holograms), but this isn't just a theoretical exercise. One ship, the Stril Luna, already has a smart Unified Bridge system in place for coordinating all its equipment. The aim is to launch the first remote-controlled cargo ships by 2020, and to have autonomous boats on the water within two decades. All told, civilians might only have to head out to sea for <a href=\"https://www.engadget.com/2014/11/18/royal-caribbean-quantum-of-the-seas/\">pleasure cruises</a>.</p>\n<p><strong>Via: </strong><a target=\"_blank\" href=\"http://www.dailymail.co.uk/sciencetech/article-3659201/Rolls-Royce-reveals-remote-controlled-roboship-augmented-reality-central-control-deck-hundreds-miles-away-sea-2020.html\">Daily Mail</a></p>\n<p><strong>Source: </strong><a target=\"_blank\" href=\"http://www.rolls-royce.com/media/press-releases/yr-2016/21-06-2016-rr-publishes-vision-of-the-future-of-remote-and-autonomous-shipping.aspx\">Rolls-Royce</a></p>",
-                "direction": "ltr"
-            },
-            "title": "Rolls-Royce expects remote-controlled cargo ships by 2020",
-            "unread": true,
-            "visual": {
-                "url": "none"
-            },
-            "webfeeds": {
-                "logo": "http://storage.googleapis.com/test-site-assets/vSbjObuspiUUUlHx496XW_WaRBw2NaRdTW1NAiwoLAs_ologo-14f041fdbc0",
-                "relatedLayout": "card",
-                "relatedTarget": "browser"
-            }
-        }
-        {
-            "alternate": [
-                {
-                    "href": "https://www.engadget.com/2016/07/03/regenerative-tooth-fillings/",
-                    "type": "text/html"
-                }
-            ],
-            "canonicalUrl": "https://www.engadget.com/2016/07/03/regenerative-tooth-fillings/",
-            "crawled": 1467582502994,
-            "engagement": 1632,
-            "engagementRate": 7.06,
-            "fingerprint": "701c2cec",
-            "id": "vSbjObuspiUUUlHx496XW/WaRBw2NaRdTW1NAiwoLAs=_155b2bbd852:c34b2c3:5405e57d",
-            "keywords": [
-                "dental",
-                "dentist",
-                "dentistry",
-                "filling",
-                "harvard",
-                "health",
-                "medicine",
-                "rootcanal",
-                "science",
-                "stemcells",
-                "teeth",
-                "tooth",
-                "universityofnottingham"
-            ],
-            "origin": {
-                "htmlUrl": "http://www.engadget.com",
-                "streamId": "feed/http://www.engadget.com/rss.xml",
-                "title": "Engadget"
-            },
-            "originId": "https://www.engadget.com/2016/07/03/regenerative-tooth-fillings/",
-            "published": 1467582300000,
-            "summary": {
-                "content": "<img src=\"http://o.aolcdn.com/hss/storage/midas/a5877744d79bc0c21cb6307fe3b21716/204030810/dental-surgery-us-army-garrison-red-cloud-flickr.jpg\"><p>You <em>really</em> don't want a root canal, and not just because it's potentially painful. Emptying the tooth of the infected tissue at its heart potentially weakens it, since you can't grow that organic material back or put toxic fillings in its place. Researchers may have a solution, though. They've <a href=\"https://www.nottingham.ac.uk/news/pressreleases/2016/july/fillings-that-heal-your-teeth.aspx\">crafted</a> fillings that get the tooth's own <a href=\"https://www.engadget.com/2015/11/05/researchers-3d-print-lego-bricks-of-functional-stem-cells/\">stem cells</a> to regenerate and repair tissue. This doesn't mean that your pearly whites would return to normal, but the substance could heal the tooth enough to spare you a root canal or prevent fillings from going south.</p>\n<p>You're not going to have this option for a while, but it's designed to be practical. You can cure the filling with light, so your dentist wouldn't have to resort to exotic techniques to rescue your teeth. And importantly, it might be less expensive overall -- you might not need a cap or crown to reduce the chances that the tooth will break after the surgery.</p>\n<p><strong>Via: </strong><a target=\"_blank\" href=\"http://www.popsci.com/end-root-canals\">Popular Science</a>, <a target=\"_blank\" href=\"http://gizmodo.com/you-might-never-need-another-root-canal-with-this-new-k-1782990298?utm_campaign=socialflow_gizmodo_twitter&utm_source=gizmodo_twitter&utm_medium=socialflow\">Gizmodo</a></p>\n<p><strong>Source: </strong><a target=\"_blank\" href=\"https://www.nottingham.ac.uk/news/pressreleases/2016/july/fillings-that-heal-your-teeth.aspx\">University of Nottingham</a></p>",
-                "direction": "ltr"
-            },
-            "title": "Regenerative tooth fillings could put an end to root canals",
-            "unread": true,
-            "visual": {
-                "contentType": "image/jpeg",
-                "height": 1066,
-                "processor": "feedly-nikon-v3.1",
-                "url": "http://o.aolcdn.com/hss/storage/midas/a5877744d79bc0c21cb6307fe3b21716/204030810/dental-surgery-us-army-garrison-red-cloud-flickr.jpg",
-                "width": 1600
-            },
-            "webfeeds": {
-                "logo": "http://storage.googleapis.com/test-site-assets/vSbjObuspiUUUlHx496XW_WaRBw2NaRdTW1NAiwoLAs_ologo-14f041fdbc0",
-                "relatedLayout": "card",
-                "relatedTarget": "browser"
-            }
-        },
-        {
-            "alternate": [
-                {
-                    "href": "https://www.engadget.com/2016/07/02/bjork-digital-vr-tour/",
-                    "type": "text/html"
-                }
-            ],
-            "canonicalUrl": "https://www.engadget.com/2016/07/02/bjork-digital-vr-tour/",
-            "crawled": 1467493571247,
-            "engagement": 6329,
-            "engagementRate": 23.18,
-            "fingerprint": "f991500c",
-            "id": "vSbjObuspiUUUlHx496XW/WaRBw2NaRdTW1NAiwoLAs=_155ad6edaaf:ae8ab2b:85ca5f35",
-            "keywords": [
-                "art",
-                "av",
-                "bjork",
-                "bjorkdigital",
-                "culture",
-                "design",
-                "entertainment",
-                "japan",
-                "miraikan",
-                "music",
-                "tokyo",
-                "video",
-                "vr"
-            ],
-            "origin": {
-                "htmlUrl": "http://www.engadget.com",
-                "streamId": "feed/http://www.engadget.com/rss.xml",
-                "title": "Engadget"
-            },
-            "originId": "https://www.engadget.com/2016/07/02/bjork-digital-vr-tour/",
-            "published": 1467493200000,
-            "recrawled": 1467538204241,
-            "summary": {
-                "content": "<img src=\"http://o.aolcdn.com/dims-shared/dims3/GLOB/crop/3000x1440+0+126/resize/1600x768!/format/jpg/quality/85/http://o.aolcdn.com/hss/storage/midas/58874b8be22e9110877924b980e60851/204019727/543424602.jpg\"><p><em><a href=\"https://www.engadget.com/2016/06/03/bjork-digital-vr-tour-sydney/\">Bjork Digital</a></em> is almost <em>Bjork: The Theme Park</em>. The installation, which opened in Tokyo earlier this week, includes a movie theater featuring a two-hour-long showcase of the artist's videography. Around the corner from there, you'll find several tracks from the album <em>Vulnicura</em> have been transformed into VR experiences. Farther down the hall, you can play around with the <a href=\"https://www.engadget.com/2014/06/13/bjork-biophilia-first-downloadable-app-in-moma/\">album-turned-music app</a> from Bjork's <em>Biophilia</em> album. The 18-day installation opened to the public this week, with Tokyo being the second stop on a world tour that also includes Europe and the US. I went for a visit and came away thinking that no other musical artist is pushing (or perhaps dragging) virtual reality forward more than Bjork. She's working on more VR tracks too -- this is really just the start.</p>\n<p>I asked Paul Grey, <em>Bjork Digital</em>'s producer, why the musician decided to work with virtual reality. &quot;[VR] is a challenge,&quot; he said. &quot;She continues to challenge herself, using this very new tool. But it's also about bringing a new experience: It's not a music video, or a live concert. Virtual reality is an intimate experience. Bjork <a href=\"https://www.instagram.com/p/BGGHE9SSJnF/\">wanted to bring people closer to the artist</a>.</p>\n<p>&quot;Take &quot;Stonemilker,&quot; for example,&quot; he continued. &quot;It's 360-degree video, so there's just the camera and Bjork. There's no crew. Bjork is stood. Alone. [The intimacy] is something you wouldn't get on a single screen.&quot; Your <a href=\"https://www.engadget.com/2015/04/17/virtual-reality-bjork/\">mileage may vary</a>, but most will have some kind of emotional reaction -- even if it's simply mild discomfort at the isolated nature of the piece.</p>\n<p><iframe height=\"354\" allowfullscreen=\"\" width=\"630\" src=\"https://www.youtube.com/embed/gQEyezu7G20?rel=0&wmode=opaque\"></iframe></p>\n<p>&quot;<a href=\"https://www.engadget.com/2015/06/05/bjork-out-bjorks-herself-with-wild-360-degree-vr-music-video/\">Stonemilker</a>,&quot; shown above, is the only experience from the showcase that you can try yourself (if you own a Gear VR or Google Cardboard headset, that is). It's also the simplest. The first VR experience was recorded on a bundle of action-cams stuck together. The camera doesn't move, but Bjork does, cavorting around you as you stay rooted to the same spot. While watching the performance is a personal experience, the tour is done in groups. We were all guided into a darkened room, given a Gear VR headset and some Bowers &amp; Wilkins headphones. The song began when we strapped the headset on.</p>\n<p>This is the same experience she showed off at the Museum of Modern Art in New York last year, but it shows <a href=\"https://www.engadget.com/2015/02/28/bjork-vr-music-video/\">the roots</a> of Bjork's experiments in the new medium. She has a rich history of working with famed designers and filmmakers like Michel Gondry, Spike Jonze and <a href=\"https://en.wikipedia.org/wiki/Bj%C3%B6rk_discography#Videos\">many more</a>. However, <em>Bjork Digital</em> required a different kind of technical expertise. The showcase has also involved established VR companies and worked with the likes of <a href=\"http://rewind.co/portfolio/bjo%CC%88rk_digital_vrx/\">Rewind</a>, <a href=\"http://riverstudios.com/ourwork\">River Studios</a> and <a href=\"http://dentsulab.tokyo/works/\">Dentsu Labs</a>.</p>\n<p>I found the first experience certainly tender and intimate, and that's probably what made the second experience seem all the more intense: Welcome to the inside of Bjork's mouth.</p>\n<p><iframe height=\"354\" allowfullscreen=\"\" width=\"630\" src=\"https://www.youtube.com/embed/iIhLCXmrCm8?rel=0&wmode=opaque\"></iframe></p>\n<p>Director Jesse Kanda and his team used a miniaturized version of the camera ball used in &quot;Stonemilker,&quot; but for &quot;Mouth Mantra,&quot; the team also ended up making a physical model of Bjork's mouth, given the need for more filming -- and the awkwardness associated with having a bunch of cameras down your throat (producer Paul Grey challenges anyone to differentiate between the two, however). The song, like the experience, is pushier, scarier -- and a little bit more nauseating. It's still not as bad as playing<em> <a href=\"https://www.engadget.com/2016/06/15/resident-evil-7-vr-sickness-ps-vr/\">Resident Evil 7</a></em><a href=\"https://www.engadget.com/2016/06/15/resident-evil-7-vr-sickness-ps-vr/\"> in VR</a>, but, perhaps intentionally, it's more aggressive than &quot;Stonemilker.&quot;</p>\n<p>The most recent creation, &quot;Not Get,&quot; moves the experience to HTC Vive from Gear VR. Honestly, the more advanced hardware made it far more like an experience and less like a music video spread 360 degrees.</p>\n<p>This is the second public appearance for &quot;Not Get&quot; VR; it made its debut in Sydney. Bjork was captured and replicated through high-resolution 3D scans, on-location motion capture and &quot;videogrammetry,&quot; which was then paired with real-time spatial audio. As I craned my neck and moved around the sparkly outline of Bjork, the voice came from within the glowing projection. While technically more sophisticated, it doesn't take complete advantage of the HTC Vive: There are no controllers, and there's not much in the way of interaction; this is still a performance. That said, the outline of contorting light particles is mesmerizing.</p>\n<p><img data-mep=\"1259128\" data-credit=\"Bjork\" alt=\"\" src=\"http://o.aolcdn.com/hss/storage/midas/30a3b530e3f10b7f850aff8abeaa9a8c/204019730/notget.jpg\"></p>\n<p>Not being able to control what happens inside the &quot;Not Get&quot; VR installation was done for simple, pragmatic reasons: &quot;The trick is [striking a balance between] cutting-edge technology, yet keeping it completely robust. It has to work all day,&quot; Grey said. &quot;This is only the second time it's been shown!&quot; (The &quot;Not Get&quot; presentation is actually the largest simultaneous HTC Vive VR installation.) &quot;In the future, I believe [interactivity] is the direction things will go in.&quot;</p>\n<p>Bjork is a very visual music artist; the exhibition also included roughly two hours of her music-video history, played inside a huge theater alongside the VR experiences. It acts as a primer for how Bjork has pushed the boundaries of technology in her videos, all while filing itself away as the part that's past. The musician has explained that although she calls on technical expertise, she herself is no tech dilettante. She <a href=\"http://www.fastcompany.com/3042429/creative-conversations/bjork-on-keeping-her-new-album-off-spotify-its-not-about-the-money-it\">described working</a> on <em>Biophillia</em> and <em>Vulnicura</em> in an interview with <em>Fast Company</em>:</p>\n<blockquote>\n<p>&quot;I only did that album [Biophillia] because I felt like I had content that made sense, that could relate to the technology. It can't just be working with the gadget for the sake of the gadget. But also it's about budgets. You can do apps cheaply. Apps was kind of punk, actually. It was like starting a punk band again. Filming for Oculus Rift is not.&quot;</p>\n</blockquote>\n<p>In fact, the night before the exhibition even opened, Bjork previewed the next track being transformed into something even grander than the original audio. In front of a small audience, she performed <em>Vulnicura</em>'s &quot;Quicksand&quot; wearing a suitably outlandish mask, all while surrounded by projection lighting and cameras. The cameras captured what was happening in front of the audience, while computers added layers of digital effects. This wasn't virtual reality, but more augmented reality -- a seamless projection of a virtual world in the real one, without the need for a clammy VR headset. (It's hopefully what all VR will be like in the future.)</p>\n<p><img data-mep=\"1261379\" data-credit=\"Bjork, Rewind\" alt=\"Bjork VR\" src=\"http://o.aolcdn.com/hss/storage/midas/507187d62fe40c18e35488a8ff050be3/204029507/bjork3.jpg\"></p>\n<p>Unfortunately, the performance (broadcasted live on YouTube as a 360-degree video), was removed from the internet soon after the performance finished. The organizers say the video will resurface (with some layers of postproduction) in the future. Bjork's work transforming this intimate breakup album into a virtual experience continues, and this performance was only the latest milestone on that front. By the time the <em>Digital</em> tour reaches the West, it's likely there will be even more VR performances for fans to try.</p>\n<p><strong>Source: </strong><a target=\"_blank\" href=\"http://www.miraikan.jst.go.jp/exhibition/bjorkdigital.html\">Miraikan</a></p>",
-                "direction": "ltr"
-            },
-            "title": "Bjork's VR album is a work in progress, just like the medium itself",
-            "unread": true,
-            "visual": {
-                "contentType": "image/jpeg",
-                "height": 768,
-                "processor": "feedly-nikon-v3.1",
-                "url": "http://o.aolcdn.com/dims-shared/dims3/GLOB/crop/3000x1440+0+126/resize/1600x768!/format/jpg/quality/85/http://o.aolcdn.com/hss/storage/midas/58874b8be22e9110877924b980e60851/204019727/543424602.jpg",
-                "width": 1600
-            },
-            "webfeeds": {
-                "logo": "http://storage.googleapis.com/test-site-assets/vSbjObuspiUUUlHx496XW_WaRBw2NaRdTW1NAiwoLAs_ologo-14f041fdbc0",
-                "relatedLayout": "card",
-                "relatedTarget": "browser"
-            }
-        },
-        {
-            "alternate": [
-                {
-                    "href": "https://www.engadget.com/2016/07/01/panasonic-ultrahd-blu-ray-dmpub900/",
-                    "type": "text/html"
-                }
-            ],
-            "canonicalUrl": "https://www.engadget.com/2016/07/01/panasonic-ultrahd-blu-ray-dmpub900/",
-            "crawled": 1467424451010,
-            "engagement": 834,
-            "engagementRate": 3.05,
-            "fingerprint": "98c5ce5e",
-            "id": "vSbjObuspiUUUlHx496XW/WaRBw2NaRdTW1NAiwoLAs=_155a95029c2:a296d6b:85ca5f35",
-            "keywords": [
-                "4k",
-                "av",
-                "bluray",
-                "dmpub900",
-                "gear",
-                "hdmi",
-                "magnolia",
-                "panasonic",
-                "uhd",
-                "ultrahdbluray"
-            ],
-            "origin": {
-                "htmlUrl": "http://www.engadget.com",
-                "streamId": "feed/http://www.engadget.com/rss.xml",
-                "title": "Engadget"
-            },
-            "originId": "https://www.engadget.com/2016/07/01/panasonic-ultrahd-blu-ray-dmpub900/",
-            "published": 1467424260000,
-            "summary": {
-                "content": "<img src=\"http://o.aolcdn.com/hss/storage/midas/6e96281c9983283441d21a947a9bc129/204029302/panasonicub900.jpg\">If you thought Ultra HD Blu-ray players were already pretty expensive, Panasonic would like to have a word. Whereas <a href=\"https://www.engadget.com/2016/01/08/samsungs-ultra-hd-blu-ray-player-is-coming-soon-for-399/\">Samsung's player</a> and the recently released <a href=\"https://www.engadget.com/2016/05/20/philips-ultra-hd-blu-ray-player/\">unit from Philips</a> aim for a mainstream crowd with $400 price tags, Panasonic is targeting audiophiles and folks with slightly deeper pockets. The DMP-UB900 costs $699 and features a few wild specs like <a href=\"https://www.panasonic.com/be/nl/corporate/news/articles/new-panasonic-4k-blu-ray-player-reproduces-images-and-sounds-exactly-as-the-director-intended.html\">twin HDMI outputs</a> for separating audio and video signals; premium capacitors, circuitry and signal processors; &quot;digital tube sound&quot; that supposedly replicates analog warmth from a digital signal and playback for DSD and ALAC audio formats. Yep, your TV's speakers would be a waste of all this tech.\n<p>Everything else is pretty standard fare for the format though, with 4K/60FPS playback, <a href=\"https://www.engadget.com/2016/04/12/netflix-hdr-streaming/\">high dynamic range video</a> and <a href=\"https://www.engadget.com/2016/01/20/4k-bluray-already-dead/\">Ultra HD streaming</a> apps along for the ride. Contrary to <a href=\"https://www.engadget.com/2016/01/08/panasonics-4k-ces-oled-lcd-and-ultra-hd-blu-ray/\">what we heard</a> at CES this year, the UB900 <em>will</em> play nicely with 3D Blu-ray. Panasonic says to expect seeing this at &quot;select&quot; retailers, including Best Buy stores with a Magnolia room, this September.</p>\nFor now, it's definitely the most expensive UHD Blu-ray player available and definitely isn't for everyone. If you're looking for a UHD machine that does more than just play Blu-rays and video streams, remember, the <a href=\"https://www.engadget.com/2016/06/13/this-is-the-xbox-one-s/\">Xbox One S</a> will launch next month. Whether or not<a href=\"https://www.engadget.com/2016/06/14/xbox-one-s-vs-project-scorpio/\"> you should buy one</a> is another matter entirely.",
-                "direction": "ltr"
-            },
-            "title": "Panasonic's $699 UHD Blu-ray player arrives in September",
-            "unread": true,
-            "visual": {
-                "contentType": "image/jpeg",
-                "height": 711,
-                "processor": "feedly-nikon-v3.1",
-                "url": "http://o.aolcdn.com/hss/storage/midas/6e96281c9983283441d21a947a9bc129/204029302/panasonicub900.jpg",
-                "width": 1400
-            },
-            "webfeeds": {
-                "logo": "http://storage.googleapis.com/test-site-assets/vSbjObuspiUUUlHx496XW_WaRBw2NaRdTW1NAiwoLAs_ologo-14f041fdbc0",
-                "relatedLayout": "card",
-                "relatedTarget": "browser"
-            }
+          "href": "http:\/\/www.bloomberg.com\/news\/articles\/2016-07-21\/hong-kong-stocks-erase-2016-loss-as-gauge-heads-for-bull-market",
+          "type": "text\/html"
         }
       ],
-    "title": "Engadget",
-    "updated": 1467073471672
+      "summary": {
+        "content": "Hong Kong stocks erased the years losses to head for a bull market amid a rally in Asian equities. Property developers climbed.",
+        "direction": "ltr"
+      },
+      "visual": {
+        "processor": "feedly-nikon-v3.1",
+        "url": "https:\/\/assets.bwbx.io\/business\/public\/images\/social_fallbacks\/bloomberg_default-a4f15fa7ee.jpg",
+        "height": 630,
+        "width": 1200,
+        "contentType": "image\/jpeg"
+      },
+      "canonicalUrl": "http:\/\/www.bloomberg.com\/news\/articles\/2016-07-21\/hong-kong-stocks-erase-2016-loss-as-gauge-heads-for-bull-market",
+      "unread": true
+    },
+    {
+      "id": "oq1n42IyECknOTiNfjNXiOoqagEUqv7DFJF0BkkUIkQ=_1560b5c8745:9736601:d45364f0",
+      "originId": "http:\/\/www.bloomberg.com\/news\/articles\/2016-07-21\/stimulus-bets-undercut-yen-euro-as-draghi-faces-brexit-fallout",
+      "fingerprint": "92aa846",
+      "origin": {
+        "streamId": "feed\/http:\/\/www.newslookup.com\/rss\/business\/bloomberg.rss",
+        "title": "Bloomberg",
+        "htmlUrl": "http:\/\/www.bloomberg.com\/"
+      },
+      "title": "Stimulus Bets Undercut Yen, Euro as Draghi Faces Brexit Fallout",
+      "published": 1469067472000,
+      "crawled": 1469069428549,
+      "alternate": [
+        {
+          "href": "http:\/\/www.bloomberg.com\/news\/articles\/2016-07-21\/stimulus-bets-undercut-yen-euro-as-draghi-faces-brexit-fallout",
+          "type": "text\/html"
+        }
+      ],
+      "summary": {
+        "content": "Policy divergence is back, sending the yen, euro and New Zealand dollar down to multi-week lows on the prospect of a new wave of stimulus as the odds mount that the Federal Reserve could raise interest rates this year.",
+        "direction": "ltr"
+      },
+      "visual": {
+        "url": "none"
+      },
+      "canonicalUrl": "http:\/\/www.bloomberg.com\/news\/articles\/2016-07-21\/stimulus-bets-undercut-yen-euro-as-draghi-faces-brexit-fallout",
+      "unread": true,
+      "engagement": 1,
+      "engagementRate": 0.25
+    },
+    {
+      "id": "oq1n42IyECknOTiNfjNXiOoqagEUqv7DFJF0BkkUIkQ=_1560b4efc99:9706fad:d45364f0",
+      "originId": "http:\/\/www.bloomberg.com\/news\/articles\/2016-07-21\/wanda-s-legendary-to-make-pokemon-film-universal-to-distribute",
+      "fingerprint": "f3ec0ce4",
+      "origin": {
+        "streamId": "feed\/http:\/\/www.newslookup.com\/rss\/business\/bloomberg.rss",
+        "title": "Bloomberg",
+        "htmlUrl": "http:\/\/www.bloomberg.com\/"
+      },
+      "title": "Wandas Legendary to Make Pokemon Film; Universal to Distribute",
+      "published": 1469066104000,
+      "crawled": 1469068541081,
+      "alternate": [
+        {
+          "href": "http:\/\/www.bloomberg.com\/news\/articles\/2016-07-21\/wanda-s-legendary-to-make-pokemon-film-universal-to-distribute",
+          "type": "text\/html"
+        }
+      ],
+      "summary": {
+        "content": "Billionaire Wang Jianlins Legendary Entertainment LLC will team up with the developers of the popular Pokemon Go game to make a live-action film based on the creatures.",
+        "direction": "ltr"
+      },
+      "visual": {
+        "processor": "feedly-nikon-v3.1",
+        "url": "https:\/\/assets.bwbx.io\/images\/users\/iqjWHBFdfxIU\/i48Zrt6WTOSU\/v0\/488x-1.jpg",
+        "height": 324,
+        "width": 488,
+        "contentType": "image\/jpeg"
+      },
+      "canonicalUrl": "http:\/\/www.bloomberg.com\/news\/articles\/2016-07-21\/wanda-s-legendary-to-make-pokemon-film-universal-to-distribute",
+      "unread": true,
+      "engagement": 1,
+      "engagementRate": 0.17
+    },
+    {
+      "id": "oq1n42IyECknOTiNfjNXiOoqagEUqv7DFJF0BkkUIkQ=_1560b41eae6:96de2d8:d45364f0",
+      "originId": "http:\/\/www.bloomberg.com\/news\/articles\/2016-07-21\/tesla-s-musk-calls-for-building-semi-truck-in-new-master-plan",
+      "fingerprint": "8ec75c5f",
+      "origin": {
+        "streamId": "feed\/http:\/\/www.newslookup.com\/rss\/business\/bloomberg.rss",
+        "title": "Bloomberg",
+        "htmlUrl": "http:\/\/www.bloomberg.com\/"
+      },
+      "title": "Tesla CEO Elon Musk Announces Heavy Truck, Ride Sharing Fleet of Cars",
+      "published": 1469065729000,
+      "crawled": 1469067684582,
+      "alternate": [
+        {
+          "href": "http:\/\/www.bloomberg.com\/news\/articles\/2016-07-21\/tesla-s-musk-calls-for-building-semi-truck-in-new-master-plan",
+          "type": "text\/html"
+        }
+      ],
+      "summary": {
+        "content": "Elon Musk unveiled his master plan for Tesla Motors Inc., delivering a long-term plan that includes making an integrated solar and battery storage system and building a freight truck and a bus. He even has a plan for a ride-sharing business.",
+        "direction": "ltr"
+      },
+      "visual": {
+        "url": "none"
+      },
+      "canonicalUrl": "http:\/\/www.bloomberg.com\/news\/articles\/2016-07-21\/tesla-s-musk-calls-for-building-semi-truck-in-new-master-plan",
+      "unread": true,
+      "engagement": 315,
+      "engagementRate": 45
+    }
+  ]
 }
