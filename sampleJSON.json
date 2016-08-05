@@ -1,5 +1,5 @@
 {
-  "title": "JSON Responses and XHR Requests",
+  "title": "JSON RESPONSES AND XHR REQUESTS",
   "description": "This document contains xhr procedures and sample outputs that will be used in Tock. JSON has been
     pretty-printed using jsonprettyprint.com",
   "usage": "Request URL and its description/usage will be presented as key-values within each response and
@@ -326,4 +326,42 @@
       "engagementRate": 45
     }
   ]
+}
+
+
+{
+  "🚩purpose": "Individual entry loader.",
+  "🚩urlEncoded": "https%3A%2F%2Fcloud.feedly.com%2Fv3%2Fentries%2Foq1n42IyECknOTiNfjNXiOoqagEUqv7DFJF0BkkUIkQ%3D_1560b5c8745%3A9736602%3Ad45364f0",
+  "id": "oq1n42IyECknOTiNfjNXiOoqagEUqv7DFJF0BkkUIkQ=_1560b5c8745:9736602:d45364f0",
+  "originId": "http:\/\/www.bloomberg.com\/news\/articles\/2016-07-21\/hong-kong-stocks-erase-2016-loss-as-gauge-heads-for-bull-market",
+  "fingerprint": "8e86006c",
+  "origin": {
+    "streamId": "feed\/http:\/\/www.newslookup.com\/rss\/business\/bloomberg.rss",
+    "title": "Bloomberg",
+    "htmlUrl": "http:\/\/www.bloomberg.com\/"
+  },
+  "title": "Hong Kong Stocks Erase 2016 Loss as Gauge Heads for Bull Market",
+  "published": 1469067844000,
+  "crawled": 1469069428549,
+  "alternate": [
+    {
+      "href": "http:\/\/www.bloomberg.com\/news\/articles\/2016-07-21\/hong-kong-stocks-erase-2016-loss-as-gauge-heads-for-bull-market",
+      "type": "text\/html"
+    }
+  ],
+  "summary": {
+    "content": "Hong Kong stocks erased the years losses to head for a bull market amid a rally in Asian equities. Property developers climbed.",
+    "direction": "ltr"
+  },
+  "visual": {
+    "processor": "feedly-nikon-v3.1",
+    "url": "https:\/\/assets.bwbx.io\/business\/public\/images\/social_fallbacks\/bloomberg_default-a4f15fa7ee.jpg",
+    "height": 630,
+    "width": 1200,
+    "contentType": "image\/jpeg"
+  },
+  "canonicalUrl": "http:\/\/www.bloomberg.com\/news\/articles\/2016-07-21\/hong-kong-stocks-erase-2016-loss-as-gauge-heads-for-bull-market",
+  "unread": true,
+  "engagement": 1,
+  "engagementRate": 0.01
 }
