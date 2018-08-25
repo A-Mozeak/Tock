@@ -1,0 +1,16 @@
+{
+  "version": "0.1.0",
+  "name": "tock_v2",
+  "description": "Electron version of the RSS ticker.",
+  "main": "main.js",
+  "private": true,
+  "dependencies": {
+    "animejs": "^2.2.0"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron-prebuilt-compile": "^2.0.6"
+  }
+}

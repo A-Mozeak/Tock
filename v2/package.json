@@ -1,0 +1,12 @@
+{
+  "name": "tock_v2",
+  "version": "1.0.0",
+  "description": "Electron version of the RSS ticker.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
