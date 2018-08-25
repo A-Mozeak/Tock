@@ -1,23 +1,20 @@
-/*----TODO----
+//What works and what doesn't.
 
---UI Styling--
-Remove underlines from links
-*/
+/*----TODO----*/
+  //Window Actions
 
+  //UI Assets
+
+  //Animation
+
+  //
 a {
   text-decoration: none
 }
 
-/*
-Set fonts and colors.
-
---Structural Styling--
-Set Animation.
-*/
 
 html{
-  /*background-color: rgba(#edf4f6, 0.95);*/
-  background-color: black; /*alternate*/
+  background-color: black;
 }
 
 @-webkit-keyframes scroller {
@@ -89,18 +86,3 @@ html{
   display: none;
   color: white;
 }
-
-/*
-#topFront.bite, #bottomFront.bite{
-  background-color: lightblue;
-}
-
-#topBack.bite, #bottomBack.bite {
-  background-color: red;
-}
-*/
-
-/*
-Enable flex on flexScrolls.
-
-Set max-widths and ellipses ::after(?).*/
