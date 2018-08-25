@@ -1,0 +1,6 @@
+WELCOME TO THE DEV LOG FOR TOCK!
+
+08/24/2018 - 
+Pushed all the v2 code to GitHub, working on the new Electron version.
+Probably going to integrate anime.js.
+Spoke with Addy about pricing models and fundraising.
