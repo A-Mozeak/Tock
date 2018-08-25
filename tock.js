@@ -8,7 +8,7 @@ if (typeof Object.create !== 'function') {
 }
 
 var screenHeight = window.screen.availHeight;
-window.moveTo(0, screenHeight - 70);
+window.moveTo(0, screenHeight - 30);
 
 
 //Get the bite nodes to paste news data. 📠
@@ -19,7 +19,7 @@ for( var i = 0 ; i < posts.length ; i++){
 	posts[i].innerHTML = bite.data[i%3].title;
 };
 
-//Function to alternate displayed data at interval. 🔄
+/*//Function to alternate displayed data at interval. 🔄
 var load  = setInterval(function(){ loader1() }, 5000);
 var load2 = setInterval(function(){ loader2() }, 10000);
 
@@ -38,7 +38,7 @@ function loader2(){
 		};
 	}
 };
-
+*/
 
 
 var querify = function(url){
