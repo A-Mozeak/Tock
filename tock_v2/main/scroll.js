@@ -4,10 +4,7 @@ const Bite = require('./bite.js');
 
 const MAXBITES = 24;
 
-let Scroll = {
-  msg: "Hello from the Scroll!",
-}
-
+/*
 let text1 = new Bite("title1", "iconURL", 0, true);
 let text2 = new Bite("title2", "iconURL", 1, false);
 
@@ -16,6 +13,7 @@ test.innerText = text1.title;
 
 var test2 = document.getElementById("bottomscroll");
 test2.innerText = text2.title;
+*/
 
 //Begin implementation of the scroll manager.
 //Arrays to hold the Bites
@@ -26,8 +24,12 @@ let belowHead = [];
 function Rotate(){
 };
 
-//Adds Bites to the arrays (do this and only this!) Calls the Render function
+//Adds Bites to the arrays (do this and only this!)
 function Update(){
+	for(var i = 0; i < MAXBITES; i++){
+		let item = new Bite("All Good.", "favico", "This is a good story.", "smileyface", i, 1313);
+		aboveHead.push(item);
+	};
 };
 
 //Function to pause on hover...
@@ -38,6 +40,13 @@ function Hover(){
 function showOptions(){
 };
 
-//Takes a Bite object and renders it using its internal parameters. Use in Update.
-function Render(bite){
+function Render(){
+	let test = document.getElementById("topscroll");
+	for(var i = 0; i < aboveHead.length; i++){
+		let n = document.createTextNode(aboveHead[i].title);
+		test.appendChild(n);
+	};
 };
+
+Update();
+Render();
