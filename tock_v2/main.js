@@ -2,8 +2,6 @@ const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const webContents = electron.webContents;
-const scroll = './main/scroll.js'
-const words = scroll.Scroll;
 
 let win; //Keeping a global ref to the window so it doesn't get garbage collected.
 

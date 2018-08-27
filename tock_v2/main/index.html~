@@ -4,15 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="scroll.js"></script>
   </head>
   <body>
-    <div id="topscroll">
-      <h4></h4>
+    <div>
+      <h4 id='phrase'>The Quick Brown Fox Jumps Over The Lazy Dog.</h4>
     </div>
-    <div id="bottomscroll">
-      <h4></h4>
-    </div>
-
-    <script src="scroll.js"></script>
   </body>
 </html>
