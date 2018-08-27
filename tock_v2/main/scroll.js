@@ -1,21 +1,11 @@
-//--Ideally this is the only script that index.html has to import.
+//-- Ideally this is the only script that index.html has to import.
 const anime = require('animejs');
 const Bite = require('./bite.js');
 
-const MAXBITES = 24;
+const MAXBITES = 24; //Max amount of stories on the feed. Consider shrinking...
 
-/*
-let text1 = new Bite("title1", "iconURL", 0, true);
-let text2 = new Bite("title2", "iconURL", 1, false);
+//-- Begin implementation of the scroll manager.
 
-var test = document.getElementById("topscroll");
-test.innerText = text1.title;
-
-var test2 = document.getElementById("bottomscroll");
-test2.innerText = text2.title;
-*/
-
-//Begin implementation of the scroll manager.
 //Arrays to hold the Bites
 let aboveHead = [];
 let belowHead = [];
@@ -40,6 +30,7 @@ function Hover(){
 function showOptions(){
 };
 
+//Render the arrays of Bites to the scroll divs.
 function Render(){
 	let test = document.getElementById("topscroll");
 	for(var i = 0; i < aboveHead.length; i++){
@@ -48,5 +39,6 @@ function Render(){
 	};
 };
 
+//-- ACTIVATING DEFENSE MATRIX!
 Update();
 Render();
