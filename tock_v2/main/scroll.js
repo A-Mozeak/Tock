@@ -1,8 +1,9 @@
 //-- Ideally this is the only script that index.html has to import.
 const anime = require('animejs');
-const Bite = require('./bite.js');
+const myBite = require('./bite.js').BiteObj;
+let myRequest = require('./bite.js').XHRTest;
 
-const MAXBITES = 24; //Max amount of stories on the feed. Consider shrinking...
+const MAXBITES = 12; //Max amount of stories on the feed.
 
 //-- Begin implementation of the scroll manager.
 
@@ -15,9 +16,11 @@ function Rotate(){
 };
 
 //Adds Bites to the arrays (do this and only this!)
+let thing = myRequest('GET', 'https://cloud.feedly.com/v3/search/feeds', '?query=tech');
+console.log(thing);
 function Update(){
-	for(var i = 0; i < MAXBITES; i++){
-		let item = new Bite("All Good.", "favico", "This is a good story.", "smileyface", i, 1313);
+	for(var i = 0; i < 3; i++){
+		let item = new myBite( "Check the console.", "favico", "This is a good story.", "smileyface", i, 1313);
 		aboveHead.push(item);
 	};
 };
