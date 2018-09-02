@@ -15,12 +15,22 @@ let belowHead = [];
 function Rotate(){
 };
 
-//Adds Bites to the arrays (do this and only this!)
-let thing = myRequest('GET', 'https://cloud.feedly.com/v3/search/feeds', '?query=tech');
-console.log(thing);
-function Update(){
-	for(var i = 0; i < 3; i++){
-		let item = new myBite( "Check the console.", "favico", "This is a good story.", "smileyface", i, 1313);
+function Querify(url){
+	let querified = url.replace(':', '%3A').replace(/\//g, '%2F');
+  return querified;
+};
+
+//SEE BITE.JS FOR REQUEST HANDLING
+myRequest("https://cloud.feedly.com/v3/subscriptions")
+	.then(data => Querify(data[2].id))
+	.then(feed => myRequest("https://cloud.feedly.com/v3/mixes/contents?streamId=" + feed + "&count=5")
+		.then(results => aboveHead = results.items)
+	);
+
+
+function Update(stories){
+	for(var i = 0; i < stories.length; i++){
+		let item = new myBite( stories[i].title, "favico", "This is a good story.", "smileyface", i, 1313);
 		aboveHead.push(item);
 	};
 };
@@ -43,5 +53,4 @@ function Render(){
 };
 
 //-- ACTIVATING DEFENSE MATRIX!
-Update();
-Render();
+setTimeout(Render, 2000);
