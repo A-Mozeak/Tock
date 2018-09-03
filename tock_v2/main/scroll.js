@@ -47,7 +47,9 @@ function showOptions(){
 function Render(){
 	let test = document.getElementById("topscroll");
 	for(var i = 0; i < aboveHead.length; i++){
-		let n = document.createTextNode(aboveHead[i].title);
+		let n = document.createElement("h5");
+		n.innerText = aboveHead[i].title.slice(0, 45) + "...";
+		n.style.cssText = "display:inline;color:#2ba450;margin-right:10px;";
 		test.appendChild(n);
 	};
 };
