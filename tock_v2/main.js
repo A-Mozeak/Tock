@@ -1,3 +1,6 @@
+//--DEVELOPER USER ID: 4192c028-eaa9-4413-a479-4add646c580a
+//--DEVELOPER ACCESS TOKEN: Azc5Zsz-q8IIFITp2KGecITCNVPOA_o6LrziM4rcwBtAKDrsTsgXY_QVgVdjgjuffVe-DRXhJZ_RKesav9iese7iukkegLKctFEujWL8Jx7bwdMieKUy2t1droAtLyvmC8wL8Zu98YrdHtDm8-7igOf-S19E4YE6g2JEB_leQss7TyXBgqzuNmbfWDraXeiZloTZCmcYtgpWpQHshuDjxgW9RcdpOvtUPYpArDLzt9BrbBsroELtMJIpvWPF:feedlydev
+
 const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
@@ -21,7 +24,7 @@ app.on('ready', () => {
 
   //Create the Tock window.
   win = new BrowserWindow({
-    backgroundColor: '#008000',
+    backgroundColor: '#d9ecf4',
     width: tWidth,
     height: tHeight,
     x: 0,
