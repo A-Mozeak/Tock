@@ -1,6 +1,10 @@
 WELCOME TO THE DEV LOG FOR TOCK!
 
-08/24/2018 - 
+08/24/2018 -
 Pushed all the v2 code to GitHub, working on the new Electron version.
 Probably going to integrate anime.js.
 Spoke with Addy about pricing models and fundraising.
+
+09/18/2018 -
+Made a lot of progress so far, but considering setting a fixed width for the Bites.
+It looks like the width of the content on each div is being subtracted from the width of the body and added as right/left position.

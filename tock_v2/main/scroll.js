@@ -38,29 +38,33 @@ function Update(stories){
 	};
 };
 
+let tWidth = 0;
 //Render the arrays of Bites to the scroll divs.
 function Render(){
-	let test1 = document.getElementById("topscroll1");
-	test1.style.cssText = "display:inline;position:relative;";
-	let test2 = document.getElementById("topscroll2");
-	test2.style.cssText = "display:inline;position:relative;";
-	while(test1.firstChild){
+	let test1 = document.getElementById("topscroll1"); //Access the front div in the top scroll
+	test1.style.cssText = "display:inline;position:fixed;"; //Set CSS for the front div
+	let test2 = document.getElementById("topscroll2"); //Access the back div in the top scroll
+	test2.style.cssText = "display:inline;position:fixed;"; //Set CSS for the back div
+	while(test1.firstChild){ //If there are already elements on the divs, remove them before refreshing.
 		test1.removeChild(test1.firstChild);
 		test2.removeChild(test2.firstChild);
 	};
-	for(var i = 0; i < aboveHead.length; i++){
+	for(var i = 0; i < aboveHead.length; i++){ //For each item in the aboveHead array, make a link element
 		let m = document.createElement("a");
 		let n = document.createElement("a");
-		m.innerText = aboveHead[i].title.slice(0, 45) + "...";
+		m.innerText = aboveHead[i].title.slice(0, 45) + "..."; //Set the innertext of the link to the titles gathered from Feedly
 		n.innerText = aboveHead[i].title.slice(0, 45) + "...";
-		m.style.cssText = "display:inline;color:#2ba450;margin-right:10px;";
+		m.style.cssText = "display:inline;color:#2ba450;margin-right:10px;"; //Set the link to display properly.
 		n.style.cssText = "display:inline;color:#2ba450;margin-right:10px;";
-		test1.appendChild(m);
+		test1.appendChild(m); //Add the link to the div
 		test2.appendChild(n);
 	};
-	let totalWidth = test1.offsetWidth + test2.offsetWidth;
-	let tBar = "width:" + totalWidth + "px;";
-	document.getElementById("top").style.cssText = tBar;
+	let totalWidth = test1.offsetWidth + test2.offsetWidth; //Calculate the width of the top div based on the two contained divs.
+	tWidth = test1.offsetWidth; //This is used to hold the front scroll width.
+	console.log(tWidth);
+	let tBar = "width:" + totalWidth + "px;"; //Set the width of the top div to the total width calculated earlier.
+	test2.style.cssText += "left:" + tWidth + "px;width:" + tWidth + "px;"; //Move the back div to the left of the front div and set its width to be equal thereto.
+	document.getElementById("top").style.cssText = tBar + "display:block;";
 };
 
 
@@ -82,7 +86,7 @@ let animateScroll = anime.timeline({
 	loop: true,
 });
 
-animateScroll
+/*animateScroll
 	.add({
 		targets: '#topscroll1',
 		left: '-90%',
@@ -94,5 +98,15 @@ animateScroll
 		easing: 'linear',
 		duration: 11000
 	});
-
+*/
 showFeed();
+
+anime({
+	loop: true,
+	targets: '#topscroll1',
+	translateX: function(el){
+		return el.clientWidth*-1;
+	},
+	easing: 'linear',
+	duration: 5000
+});
