@@ -38,13 +38,28 @@ function Update(stories){
 	};
 };
 
+
+// Create Bite
+function makeBite(source){
+	return new myBite(source.title, "favico", "Cool Story Bro", "Thumbs Up")
+}
+
+//-- NEW FACTORY FUNCTION FOR RENDERING, SEE DEVLOG.
+function conveyorBelt(){
+
+}
+
+//-- RENDER FUNCTION, CURRENTLY OUT OF USE.
 let tWidth = 0;
+let top1width = 0;
+let top2width = 0;
+
 //Render the arrays of Bites to the scroll divs.
-function Render(){
+/* function Render(){
 	let test1 = document.getElementById("topscroll1"); //Access the front div in the top scroll
-	test1.style.cssText = "display:inline;position:fixed;"; //Set CSS for the front div
+	test1.style.cssText = "display:block;position:fixed;"; //Set CSS for the front div
 	let test2 = document.getElementById("topscroll2"); //Access the back div in the top scroll
-	test2.style.cssText = "display:inline;position:fixed;"; //Set CSS for the back div
+	test2.style.cssText = "display:block;position:fixed;"; //Set CSS for the back div
 	while(test1.firstChild){ //If there are already elements on the divs, remove them before refreshing.
 		test1.removeChild(test1.firstChild);
 		test2.removeChild(test2.firstChild);
@@ -54,24 +69,28 @@ function Render(){
 		let n = document.createElement("a");
 		m.innerText = aboveHead[i].title.slice(0, 45) + "..."; //Set the innertext of the link to the titles gathered from Feedly
 		n.innerText = aboveHead[i].title.slice(0, 45) + "...";
-		m.style.cssText = "display:inline;color:#2ba450;margin-right:10px;"; //Set the link to display properly.
-		n.style.cssText = "display:inline;color:#2ba450;margin-right:10px;";
-		test1.appendChild(m); //Add the link to the div
+		m.style.cssText = "display:inline-block;color:#2ba450;margin-right:10px;"; //Set the link to display properly.
+		n.style.cssText = "display:inline-block;color:#2ba450;margin-right:10px;";
+		test1.appendChild(m); //Add the link to the div.
+		top1width += m.offsetWidth + 10;
 		test2.appendChild(n);
+		top2width += n.offsetWidth + 10;
 	};
-	let totalWidth = test1.offsetWidth + test2.offsetWidth; //Calculate the width of the top div based on the two contained divs.
-	tWidth = test1.offsetWidth; //This is used to hold the front scroll width.
+	let totalWidth = top1width + top2width; //Calculate the width of the top div based on the two contained divs.
+	test1.style.cssText += "width:" + (top1width+100) + "px;";
+	test2.style.cssText += "width:" + (top2width+100) + "px;";
+	tWidth = top1width; //This is used to hold the front scroll width.
 	console.log(tWidth);
 	let tBar = "width:" + totalWidth + "px;"; //Set the width of the top div to the total width calculated earlier.
 	test2.style.cssText += "left:" + tWidth + "px;width:" + tWidth + "px;"; //Move the back div to the left of the front div and set its width to be equal thereto.
-	document.getElementById("top").style.cssText = tBar + "display:block;";
+	document.getElementById("top").style.cssText = tBar + "display:block;height:30px;";
 };
-
+*/
 
 //SEE BITE.JS FOR REQUEST HANDLING
 
-function showFeed(){
-	myRequest("https://cloud.feedly.com/v3/subscriptions")
+async function showFeed(){
+	await myRequest("https://cloud.feedly.com/v3/subscriptions")
 	.then(data => Querify(data[feedNumber].id))
 	.then(feed => myRequest("https://cloud.feedly.com/v3/mixes/contents?streamId=" + feed + "&count=5")
 	.then(results => aboveHead = results.items)
@@ -101,6 +120,7 @@ let animateScroll = anime.timeline({
 */
 showFeed();
 
+/*
 anime({
 	loop: true,
 	targets: '#topscroll1',
@@ -108,5 +128,6 @@ anime({
 		return el.clientWidth*-1;
 	},
 	easing: 'linear',
-	duration: 5000
+	duration: 7000
 });
+*/

@@ -1,13 +1,16 @@
-/*-- This file contains the implementation of the Bite object. These should be build from some
-sort of factory when the scroll gets updated --*/
+/*-- This file contains the implementation of the Bite object. These are instantiated using the factory pattern. --*/
 
-function Bite(title, icon, story, photo, num, time) {
-	this.title = title;
-	this.icon = icon;
-	this.story = story;
-	this.photo = photo;
-	this.num = num;
-	this.time = time;
+function getBite(title, icon, story, photo, num, time, source) {
+	let fresh_bite = {};
+	fresh_bite.title = title;
+	fresh_bite.icon = icon;
+	fresh_bite.story = story;
+	fresh_bite.photo = photo;
+	fresh_bite.num = num;
+	fresh_bite.time = time;
+	fresh_bite.source = source;
+
+	return fresh_bite;
 }
 
 /*
@@ -27,15 +30,15 @@ USING THE NEW VANILLA JS FETCH API TO HANDLE THE REQUEST.
 
 //SEE MAIN.JS FOR OAUTH CREDS
 
-function feedRequest(url){
-	return fetch(url, {
+async function feedRequest(url){
+	return await fetch(url, {
 		method: "GET",
 		headers: {
-			"Authorization": "OAuth Azc5Zsz-q8IIFITp2KGecITCNVPOA_o6LrziM4rcwBtAKDrsTsgXY_QVgVdjgjuffVe-DRXhJZ_RKesav9iese7iukkegLKctFEujWL8Jx7bwdMieKUy2t1droAtLyvmC8wL8Zu98YrdHtDm8-7igOf-S19E4YE6g2JEB_leQss7TyXBgqzuNmbfWDraXeiZloTZCmcYtgpWpQHshuDjxgW9RcdpOvtUPYpArDLzt9BrbBsroELtMJIpvWPF:feedlydev"
+			"Authorization": "OAuth AxEU_tdddgfEcgeCgULcvery0EiFHq30bLJEWCO5RY7gVRFVWpRKE0tzjtPyLw9NX5hnCxkPszmanRfqVSLOTZeOfXYFI4nmuvpUsz7_MNXvz7nuPWzUCoPTBMqiEqlAES_ZODn2BxSv1isUFKnpaHDKUV3QAeyZ6MB5BEixmPGC6JDKIVzGBuRzTlg96ia18JhqqKn-nj49_2Ch5n53WEGBbdFlo_2xz-TdCw8kUeVB7k7h3fv0HU-ujryBbg:feedlydev"
 		},
 	})
 	.then(response => response.json());
 };
 
-module.exports.BiteObj = Bite;
+module.exports.BiteObj = getBite;
 module.exports.XHRTest = feedRequest;
