@@ -30,7 +30,7 @@ USING THE NEW VANILLA JS FETCH API TO HANDLE THE REQUEST.
 
 //SEE MAIN.JS FOR OAUTH CREDS
 
-async function feedRequest(url){
+async function feedlyGet(url){
 	return await fetch(url, {
 		method: "GET",
 		headers: {
@@ -41,4 +41,4 @@ async function feedRequest(url){
 };
 
 module.exports.BiteObj = getBite;
-module.exports.XHRTest = feedRequest;
+module.exports.feedlyGet = feedlyGet;

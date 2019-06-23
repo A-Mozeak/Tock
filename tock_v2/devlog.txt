@@ -12,3 +12,6 @@ It looks like the width of the content on each div is being subtracted from the 
 05/26/2019 - 
 Back at it. This two-scroll situation is getting a little out of hand... maybe it would just be better to have the feed "spit" bites out after all... It could be a factory function that says for each headline in the array of headlines, animate it down the line (from el.right = vw+el.width to el.right = 0).
 Each time it spits out a new headline, it checks to see if any new ones are available and pushes them to the back of the queue. If nothing new, it just pushes the just spat one to the back. Worry about filling out the viewport with stories later.
+
+6/22/2019 - 
+Implemented a working factory pattern to generate lists of bites that form a feed. Now I have fine-grained control over what information goes onto the feed and can manipulate the bites accordingly.
