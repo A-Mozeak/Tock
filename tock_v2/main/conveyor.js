@@ -24,6 +24,17 @@ let Conveyor = {
 let feedMachine = {
     raw_feed_data: [],
     bite_list: [],
+    getRawData: function(s_id) {
+        myRequest("https://cloud.feedly.com/v3/mixes/contents?streamId=" + s_id + "&count=5")
+        .then(
+            content => {
+                this.raw_feed_data.push(content);
+            })
+        .catch(
+            fail => {
+                console.log("Failed to retrieve stream data.");
+            });
+    },
     generateBites: function() {
         this.raw_feed_data.forEach( element => {
             element["items"].forEach( item => {
@@ -45,22 +56,11 @@ let feed_instance = Object.create(feedMachine);
 myRequest("https://cloud.feedly.com/v3/subscriptions")
 .then (
     data => {
-        let id_array = [];
-        data.forEach(element => {
-            id_array.push(encodeURIComponent(element.id));
-        });
-        return id_array;
+        return data.map(el => encodeURIComponent(el.id));
     })
 .then (
     ids => {
-        ids.forEach(
-            element => {
-                myRequest("https://cloud.feedly.com/v3/mixes/contents?streamId=" + element + "&count=5")
-                .then(
-                    content => {
-                        feed_instance.raw_feed_data.push(content);
-                    })
-            });
+        ids.forEach(el => feed_instance.getRawData(el));
     })
 .catch (
     fail => 
